@@ -1,0 +1,11 @@
+{
+  "name": "acountinggame",
+  "version": "0.0.1",
+  "description": "An Incremental Game inspired by numbers, math, and my nephew's love of counting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raine Adams",
+  "license": "GPL-3.0"
+}
