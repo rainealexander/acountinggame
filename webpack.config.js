@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: process.env.PROJECT_MODE,
+  mode: process.env.PROJECT_MODE || "development",
   entry: path.resolve(__dirname, 'client', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -19,7 +19,9 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ['@babel/preset-env', { 'targets': 'defaults' }],
+            ['@babel/preset-env', { 
+              "targets": "defaults" 
+            }],
             '@babel/preset-react'
           ]
         }
