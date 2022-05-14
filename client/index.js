@@ -1,8 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './components/app.jsx';
 
 const root = createRoot(document.getElementById('root'));
 
 root.render(
-  <h1>A Counting Game</h1>
+  <App />
 );
